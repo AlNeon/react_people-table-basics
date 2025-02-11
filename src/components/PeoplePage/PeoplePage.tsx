@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import { getPeople } from '../api';
-import { Person } from '../types';
-import { Loader } from './Loader';
-import { PeopleTable } from './PeopleTable';
+import { getPeople } from '../../api';
+import { Person } from '../../types';
+import { Loader } from '../Loader';
+import { PeopleTable } from '../PeopleTable/PeopleTable';
 
 export const PeoplePage = () => {
   const [people, setPeople] = useState<Person[]>([]);
@@ -37,7 +37,6 @@ export const PeoplePage = () => {
           )}
         </div>
       </div>
-      ;
     </>
   );
 };
